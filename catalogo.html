@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catalogo – Libreria Lithos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <script
+    src="https://www.paypal.com/sdk/js?client-id=BAAa7Wn6zApTKl92D43roYqT-IGsdOCVTm8kOTxsvADPGpsdU3x9jfuUcsndq0xfpfV7J2Rn_LEmLE7c1I&components=hosted-buttons&disable-funding=venmo&currency=EUR">
+    </script>
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Logo Libreria Lithos" class="brand-logo">
+      <span class="brand-name">Libreria Lithos</span>
+    </div>
+    <nav class="site-nav" aria-label="Navigazione principale">
+      <button class="hamburger" type="button" aria-label="Apri o chiudi il menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="menu">
+        <li><a href="index.html#home">Home</a></li>
+        <li><a href="index.html#casa-editrice">Casa Editrice</a></li>
+        <li><a href="index.html#libri">Libri Antichi e Moderni</a></li>
+        <li><a href="index.html#eventi">Eventi</a></li>
+        <li><a href="index.html#contatti">Contatti</a></li>
+        <li><a href="catalogo.html">Catalogo</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section section-alt" aria-labelledby="catalogo-title">
+      <div class="section-inner">
+        <h2 id="catalogo-title">Catalogo Online</h2>
+        <p>Acquista i nostri libri direttamente online tramite PayPal.</p>
+
+        <div class="paypal-buttons">
+          <div id="paypal-container-UHPJ2HYT8XF7E"></div>
+        </div>
+
+        <script>
+          paypal.HostedButtons({
+            hostedButtonId: "UHPJ2HYT8XF7E",
+          }).render("#paypal-container-UHPJ2HYT8XF7E")
+        </script>
+
+
+      </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Libreria Lithos &ndash; Lithos Editrice S.R.L. P.IVA 04094631001</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>

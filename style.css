@@ -436,3 +436,109 @@ section {
     font-size: 1.05rem;
   }
 }
+
+/* === Catalogo Libri === */
+
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+}
+
+.libro {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px -20px rgba(0, 0, 0, 0.25);
+  display: flex;
+  gap: 18px;
+  padding: 24px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.libro:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 36px -24px rgba(0, 0, 0, 0.3);
+}
+
+.libro img {
+  width: 110px;
+  height: 160px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  object-fit: cover;
+}
+
+.libro .info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.libro h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  margin-bottom: 4px;
+}
+
+.libro p {
+  font-size: 0.95rem;
+  color: var(--muted);
+}
+
+/* Form acquisto */
+.libro form {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.libro label {
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.libro input[type="number"] {
+  width: 70px;
+  padding: 8px 10px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fbfaf8;
+  font: inherit;
+  color: var(--text);
+}
+
+.libro button {
+  align-self: flex-start;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.libro button:hover,
+.libro button:focus {
+  background: var(--accent-dark);
+}
+
+.paypal-buttons {
+  display: flex;
+  flex-wrap: wrap;   /* manda a capo se non ci sta tutto */
+  gap: 20px;         /* spazio tra i pulsanti */
+  justify-content: center; /* allineamento orizzontale */
+  align-items: center;     /* allineamento verticale */
+}
+
+.paypal-buttons > div {
+  min-width: 300px;
+}
+
+
