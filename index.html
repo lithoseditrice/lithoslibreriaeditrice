@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Libreria Lithos</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="brand">
+      <img src="images/logo.png" alt="Logo Libreria Lithos" class="brand-logo">
+      <span class="brand-name">Libreria Lithos</span>
+    </div>
+    <nav class="site-nav" aria-label="Navigazione principale">
+      <button class="hamburger" type="button" aria-label="Apri o chiudi il menu" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#casa-editrice">Casa Editrice</a></li>
+        <li><a href="#libri">Libri Antichi e Moderni</a></li>
+        <li><a href="#eventi">Eventi</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">Un rifugio silenzioso nel cuore di Roma</h1>
+          <p>Dal 1987 selezioniamo libri rari, prime edizioni e le migliori novit&agrave; editoriali. Libreria Lithos &egrave; il luogo ideale per chi cerca storie da sfogliare con calma, accompagnate dal profumo della carta e da un consiglio personalizzato.</p>
+        </div>
+        <div class="photo-grid">
+            <figure>
+                <img src="images/background.jpg" alt="Libreria">
+              </figure>
+        </div>
+        <div class="photo-grid">
+          <figure>
+            <img src="images/photo_4_2025-07-08_17-19-04.jpg" alt="Scaffali della Libreria Lithos">
+          </figure>
+          <figure>
+            <img src="images/photo_7_2025-07-08_17-31-31.jpg" alt="Sala lettura della Libreria Lithos">
+          </figure>
+        </div>
+        <blockquote class="quote-box">
+          <p>&ldquo;Un libro dev’essere un’ascia per rompere il mare ghiacciato che è dentro di noi&rdquo;</p>
+          <cite>&mdash; Franz Kafka</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section id="casa-editrice" class="section" aria-labelledby="editrice-title">
+      <div class="section-inner">
+        <h2 id="editrice-title">Casa Editrice</h2>
+        <p>La casa editrice Lithos nasce a Roma il 15 maggio 1991 dall’iniziativa di un gruppo di amici attivi, a vario titolo, nel mondo del libro: librai, tipografi, grafici, redattori e bibliotecari. A guidarli è un lucano trasferitosi a Roma per studiare sociologia, che già nel 1989 aveva aperto una piccolissima libreria in viale Ippocrate, la principale arteria dietro la Città Universitaria, all’epoca ricca di librerie. Nonostante lo spazio ridotto, quella libreria riuscì a distinguersi grazie a una vivace politica di sconti e alla rapidità nel reperire i volumi richiesti, guadagnandosi presto l’attenzione di docenti e studenti delle facoltà umanistiche e giuridiche.
+            Nel 1997 la libreria cambia nome, assumendo quello della casa editrice (pur restando due realtà distinte), e si trasferisce in un locale più ampio e di proprietà in via Vigevano 15, sempre nei pressi di viale Ippocrate. Nello stesso periodo nasce anche il settore dedicato al modernariato, allestito in un magazzino della stessa via, al civico 2, denominato “Officina Lithos”, i cui volumi sono oggi disponibili anche online attraverso il sito Maremagnum.</p>
+        <div class="values">
+          <div>
+            <h3>Collane curate</h3>
+            <p>Dalla narrativa contemporanea ai saggi di arte e filosofia, ogni collana racconta un percorso tematico pensato per i nostri lettori.</p>
+          </div>
+          <div>
+            <h3>Laboratorio tipografico</h3>
+            <p>Lavoriamo con tipografie locali per stampare piccole serie numerate, con attenzione alle rilegature e alla longevit&agrave; dei materiali.</p>
+          </div>
+          <div>
+            <h3>Autori vicini</h3>
+            <p>Accompagniamo gli autori in ogni fase: editing, presentazioni, promozione e dialogo costante con il pubblico della libreria.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="libri" class="section section-alt" aria-labelledby="libri-title">
+      <div class="section-inner">
+        <h2 id="libri-title">Libri Antichi e Moderni</h2>
+        <div class="book-focus">
+          <article>
+            <h3>Antiquaria selezionata</h3>
+            <p>Manoscritti, prime edizioni, libri illustrati dell'Ottocento e del Novecento. Ogni pezzo &egrave; corredato da schede descrittive e certificazione dello stato di conservazione.</p>
+          </article>
+          <article>
+            <h3>Novit&agrave; e indipendenti</h3>
+            <p>Un catalogo in aggiornamento continuo, con titoli scelti tra le migliori case editrici indipendenti italiane e internazionali.</p>
+          </article>
+        </div>
+        <p class="note">Richiedi una ricerca personalizzata: troveremo il volume che cerchi, ovunque sia stato pubblicato.</p>
+      </div>
+    </section>
+
+    <section id="eventi" class="section" aria-labelledby="eventi-title">
+      <div class="section-inner">
+        <h2 id="eventi-title">Eventi</h2>
+        <div class="event-list">
+          <article class="event-card">
+            <h3>Club di lettura del sabato</h3>
+            <p>Ogni primo sabato del mese, ore 17:30. Un confronto aperto sui classici della letteratura e sulle nuove voci che meritano attenzione.</p>
+          </article>
+          <article class="event-card">
+            <h3>Incontri con gli autori</h3>
+            <p>Presentazioni, firmacopie e dialoghi con scrittori e illustratori. Posti limitati, prenotazione consigliata.</p>
+          </article>
+          <article class="event-card">
+            <h3>Laboratori per bambini</h3>
+            <p>Attivit&agrave; creative e letture animate ogni terza domenica del mese, per avvicinare i pi&ugrave; piccoli ai libri.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contatti" class="section section-alt" aria-labelledby="contatti-title">
+      <div class="section-inner contatti">
+        <h2 id="contatti-title">Contatti</h2>
+        <div class="contact-info">
+          <p><strong>Indirizzo:</strong> Via Vigevano 15, 00161 Roma</p>
+          <p><strong>Telefono e Whatsapp:</strong> <a href="tel:+390644237720">0644237720</a></p>
+          <p><strong>Email:</strong> <a href="mailto:lithosroma@gmail.com">lithosroma@gmail.com</a></p>
+          <p><strong>Instagram:</strong> <a href="https://www.instagram.com/librerialithoseinaudi?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener noreferrer">
+              @librerialithoseinaudi
+            </a>
+          </p>
+          <p><strong>Orari:</strong> Lun - Ven: 09:30 - 13:30, 16:00 - 19:30 <br>Sab: 09:30 - 13:30</p>
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.290065611568!2d12.515372011807399!3d41.90812276341363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f61b7a9a5ea91%3A0xcb8d87418c884d8a!2sLibreria%20Lithos!5e0!3m2!1sit!2sit!4v1759239010483!5m2!1sit!2sit" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <!-- <form class="contact-form" aria-label="Invia un messaggio">
+          <label for="nome">Nome</label>
+          <input id="nome" type="text" name="nome" placeholder="Il tuo nome">
+
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" placeholder="nome@esempio.it">
+
+          <label for="messaggio">Messaggio</label>
+          <textarea id="messaggio" name="messaggio" rows="4" placeholder="Come possiamo aiutarti?"></textarea>
+
+          <button type="submit">Invia richiesta</button>
+        </form> -->
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2025 Libreria Lithos &ndash; Lithos Editrice S.R.L. P.IVA 04094631001</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
